@@ -1,0 +1,22 @@
+ git config --global user.email "vijayanrece@gmail.com"
+   29  git config --global user.username "vijayanrece"
+   35  git remote add origin git@github.com:vijayanrece/lab2.1.git
+   36  git init
+   37  git add .
+   38  git status
+   39  git commit . -m "These are sample files"
+   42  git remote add origin git@github.com:vijayanrece/lab2.1.git
+   43  git push -u origin main
+   44  git push -u origin master
+   45  git config --get remote.origin.url
+   47  ssh-add ~/.ssh/github_rsa.
+   61  cat ~/.ssh/github_rsa.pub
+   62  git push -u origin master
+   64  git status
+   65  git add .
+   66  git status
+   67  git commit . -m "These are sample files"
+   68  git status
+   69  git push -u origin master
+   71  history | grep -i "git"
+
