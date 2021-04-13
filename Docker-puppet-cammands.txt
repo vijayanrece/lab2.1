@@ -1,0 +1,36 @@
+182  yum install docker
+  183  docker
+  185  docker version
+  186  service docker start
+  187  docker version
+  188  docker network create puppet
+  189  docker network ls
+  190  docker pull puppet/puppetserver-standalone
+  191  docker login --username vijayanrece --password Reac
+  192  docker pull puppet/puppetserver-standalone
+  193  docker pull puppet/puppetserver
+  194  docker pull puppet/puppet-agent-alpine
+  195  docker images
+  197  docker run --net puppet -d --name puppetserver --hostname puppet puppet/puppetserver
+  198  docker ps
+  199  docker logs puppetserver
+  201  docker logs puppetserver
+  203  docker logs puppetserver
+  204  docker run --net puppet -d --name puppetserver --hostname puppet puppet/puppetserver
+  205  docker logs puppetserver
+  206  docker logs puppetserver
+  207  docker logs puppetserver
+  208  docker logs puppetserver
+==================
+ 181  docker run --rm --net puppet --link=puppetserver:puppet puppet/puppet-agent-alpine
+  182  docker run --rm --net puppet --link=puppetserver:puppet puppet/puppet-agent-alpine resource package
+  183  docker ps
+  184  docker rm -f puppetserver
+  185  docker ps
+  186  docker run --rm --net puppet --link=puppetserver:puppet puppet/puppet-agent-alpine
+  187  docker run --rm --net puppet --link=puppetserver:puppet puppet/puppet-agent-alpine
+  188  docker run --rm --net puppet --link=puppetserver:puppet puppet/puppet-agent-alpine resource package
+  189  docker rm -f puppetserver
+  190  docker ps
+  192  history | grep docker
+
